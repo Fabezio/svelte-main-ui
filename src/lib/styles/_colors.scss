@@ -1,0 +1,35 @@
+// $light: whitesmoke;
+// $dark: #333;
+// $sky: skyblue;
+
+$colors: black, white, blue, green, cyan, orange, yellow, red, magenta, purple, pink, violet, lime;
+$light-colors: white, cyan, aqua, yellow, magenta, red, lime, violet, gold;
+$dark-colors: black, blue, green, orange, purple, pink,  goldenrod, darkred ;
+@each $color in $light-colors {
+  .txt-#{$color} {
+    color: $color;
+  }
+  .bg-#{$color} {
+    background: $color;
+    color: black;
+  }
+}
+@each $color in $dark-colors {
+  .txt-#{$color} {
+    color: $color;
+  }
+  .bg-#{$color} {
+    background: $color;
+    color: white;
+  }
+}
+
+
+
+// .txt-light {
+// color: $light;
+// }
+// .bg-light {
+//   background: $light;
+
+// }

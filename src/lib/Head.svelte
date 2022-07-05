@@ -1,7 +1,7 @@
 <script>
-  import "./style.css"
-  export let website
-  export let page
+  
+  export let website =""
+  export let page=""
 
 </script>
 <svelte:head>

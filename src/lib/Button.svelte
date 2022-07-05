@@ -2,22 +2,21 @@
   import {createEventDispatcher} from "svelte"
   const dispatch = createEventDispatcher()
     export let bg
+    export let txt = ""  
   export let light = false
   export let wide = false
-  export let txt = ""  
 
-  let style = `background-color: ${bg};`
+  let style = `bg-${bg}`
   $: {
-    if (light) style += ` color: whitesmoke;`
-    else if (txt != "") style += ` color: ${txt};`
-    if (wide) style += ` width: 100%;`
+
+    if (txt != "") style += ` txt-${txt}`
     console.log("Button:")
     console.log(style)
     console.log("- - -")
-    }
+    } 
 </script>
 
-<button {style} on:click={()=> dispatch("click")} >
+<button class:txt-white={light} class:wide={wide} class={style} on:click={()=> dispatch("click")} >
   <slot />
 </button>
 

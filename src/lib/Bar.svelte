@@ -3,17 +3,17 @@
   export let light = false
   export let txt = ""  
 
-  let style = `background-color: ${bg}`
+  let style = `bar bg-${bg}`
   $: {
-    if (light) style += `; color: whitesmoke;`
-    else if (txt != "") style += `; color: ${txt};`
+
+    if (txt != "") style += ` txt-${txt}`
     console.log("Bar:")
     console.log(style)
     console.log("- - -")
-    }
+    } 
 </script>
 
-<div class="bar" {style} >
+<div class:txt-white={light} class="{style}" >
   <slot />
 
 </div>
@@ -28,7 +28,7 @@
     border-radius: 1em;
     margin: 4px auto;
     /* width: 1200px; */
-    filter: grayscale(0.7);
+    filter: grayscale(0.25);
     
   }
   $sizes: 576px, 768px, 992px, 1200px;
