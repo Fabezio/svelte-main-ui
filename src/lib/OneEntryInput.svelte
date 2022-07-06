@@ -25,6 +25,10 @@
   <input class={style} bind:value={value} type="password" id={label} name={label} {placeholder}>
   {:else if entryType == "url"}
   <input class={style} bind:value={value} type="url" id={label} name={label} {placeholder}>
+  {:else if entryType == "date"}
+  <input class={style} bind:value={value} type="date" id={label} name={label} {placeholder}>
+  {:else if entryType == "time"}
+  <input class={style} bind:value={value} type="time" id={label} name={label} {placeholder}>
   {:else if entryType == "file"}
   <input class={style} bind:value={value} type="file" {multiple} id={label} name={label} {placeholder}>
   {/if}
