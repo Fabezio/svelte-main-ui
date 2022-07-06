@@ -1,16 +1,17 @@
 <script>
+  import {website} from "$lib/store/webIdent.js";
+  //  $website =""
+  export let title=""
   
-  export let website =""
-  export let page=""
 
 </script>
 <svelte:head>
   <title>
-    {website} | {page}
+    {$website} | {title}
   </title>
 </svelte:head>
 <h1>
-  {page}
+  {title}
 </h1>
 
 <style>

@@ -8,7 +8,7 @@
   const arr = new Array(10).fill(0).map((_, i) => i)
 let  entry = ""
 </script>
-<Head website="svelteMainUI tuto" page="Accueil" />
+<Head title="Accueil" />
 <Dataset dataSet={arr} />
 <!-- <h1>Welcome to SvelteKit</h1> -->
 <Bar bg="green" light >
