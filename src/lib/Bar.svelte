@@ -2,8 +2,10 @@
   export let bg
   export let light = false
   export let txt = ""  
+  export let justify = "start"
+  export let dir = "row"
 
-  let style = `bar bg-${bg}`
+  let style = `bar bg-${bg} flex-justify-${justify} flex-direction-${dir}`
   $: {
 
     if (txt != "") style += ` txt-${txt}`

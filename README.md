@@ -16,7 +16,7 @@ Follow this step: into *__layout.svelte$ type this code
 >
 > import *{ website }* from *'svelte-main-ui/store/webIdent'*
 >
-> $website = "\[your website name\]"
+> $website = "..."
 
 Then place the Style component underneath *\<\script\>* markup.
 
@@ -26,7 +26,7 @@ Then place the Style component underneath *\<\script\>* markup.
 
 ### \<Head \/\> property
 
-> \<Head title="\[page title\]" \/\>
+> \<Head title="..." \/\>
 
 ### *N.B.*
 
@@ -52,7 +52,7 @@ Like **Container**, the **Bar** container is web responsive and you may choose t
 
 More, you can choose backgroud and text inks; just type the ones you need :
 
-> \<Bar txt="\[your color\]" bg="\[your color\]"  \>
+> \<Bar txt="..." bg="..."  \>
 
 Note that text ink adapts with background color
 
@@ -72,7 +72,7 @@ Uses the same *bg* and *txt* properties, including *wide*
 
 Usable functions *on:click*
 
-> \<Button on:click=\{\[your function\]\} \>
+> \<Button on:click=\{... or ()=> ...} \>
 
 ___
 
@@ -90,7 +90,6 @@ On mobile devices, \<label\> will not appear; a placeholder will invite you to p
 - value
 - entryType (for type)
 
-
 ***entryType attribute***
 those attributes are
 
@@ -103,5 +102,3 @@ those attributes are
 - file (in this case, you can enter *multiple* option this way:
 
 > \<Input placeholder="..." bind:value="..." entryType="file" multiple  \/\>
-
-

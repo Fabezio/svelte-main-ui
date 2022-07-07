@@ -16,8 +16,10 @@
 		".": "src/lib/*.svelte"
 	},
 	"devDependencies": {
+		"@mdi/font": "^6.9.96",
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
+		"fontawesome-free": "^1.0.4",
 		"node-sass": "^7.0.1",
 		"prettier": "^2.7.1",
 		"prettier-plugin-svelte": "^2.7.0",
@@ -28,5 +30,9 @@
 		"tslib": "^2.3.1",
 		"typescript": "^4.7.2"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@jamescoyle/svelte-icon": "^0.1.1",
+		"@mdi/js": "^6.9.96"
+	}
 }

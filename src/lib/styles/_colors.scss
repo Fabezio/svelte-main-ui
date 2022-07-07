@@ -2,7 +2,7 @@
 // $dark: #333;
 // $sky: skyblue;
 
-$colors: black, white, blue, green, cyan, orange, yellow, red, magenta, purple, pink, violet, lime;
+// $colors: black, white, blue, green, cyan, orange, yellow, red, magenta, purple, pink, violet, lime;
 $light-colors: white, cyan, aqua, yellow, magenta, red, lime, violet, gold;
 $dark-colors: black, blue, green, orange, purple, pink,  goldenrod, darkred ;
 @each $color in $light-colors {

@@ -5,17 +5,48 @@
   import Bar from "$lib/Bar.svelte"
   import Button from "$lib/Button.svelte"
   import Container from "$lib/Container.svelte"
+  // import Icon from "$lib/Icon.svelte"
   const arr = new Array(10).fill(0).map((_, i) => i)
-let  entry = ""
+  let entry = ""
 </script>
 <Head title="Accueil" />
 <Dataset dataSet={arr} />
 <!-- <h1>Welcome to SvelteKit</h1> -->
-<Bar bg="green" light >
+<Bar bg="green"  >
   <h2>
-  hey, my friends!
+flex start
   
   </h2>
+</Bar>
+<Bar bg="green" justify="end"  >
+  <h2>
+flex end
+  
+  </h2>
+</Bar>
+
+<Bar bg="green" justify="center"  >
+  <h2>
+  center
+</h2>
+</Bar>
+
+<Bar bg="green" justify="evenly"  >
+  <h2>space</h2>
+  <h2>evenly</h2>
+</Bar>
+<Bar bg="green" justify="around"  >
+  <h2>space</h2>
+  <h2>around</h2>
+</Bar>
+<Bar bg="green" justify="between"  >
+  <h2>space</h2>
+  <h2>between</h2>
+</Bar>
+  
+<Bar bg="aqua" >
+  <!-- <Icon /> -->
+  <!-- <Icon fa icon="user" /> -->
 </Bar>
 <Container>
   <OneEntryInput placeholder="entrez votre nom" entryType="file"  label="username" bind:value={entry} />

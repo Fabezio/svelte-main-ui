@@ -1,0 +1,101 @@
+.flex {
+  display: flex;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-column {
+  flex-direction: column;
+}
+
+
+.flex-column-reverse {
+  flex-direction: column-reverse;
+}
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+.flex-justify-start {
+  justify-content: flex-start;
+}
+.flex-justify-end {
+  justify-content: flex-end;
+}
+.flex-justify-center {
+  justify-content: center;
+}
+.flex-justify-between {
+  justify-content: space-between;
+}
+.flex-justify-around {
+  justify-content: space-around;
+}
+.flex-justify-evenly {
+  justify-content: space-evenly;
+}
+.flex-align-start {
+  align-items: flex-start;
+}
+.flex-align-end {
+  align-items: flex-end;
+}
+.flex-align-center {
+  align-items: center;
+}
+.flex-align-baseline {
+  align-items: baseline;
+}
+.flex-align-stretch {
+  align-items: stretch;
+}
+.flex-align-content-start {
+  align-content: flex-start;
+}
+.flex-align-content-end {
+  align-content: flex-end;
+}
+.flex-align-content-center {
+  align-content: center;
+}
+.flex-align-content-between {
+  align-content: space-between;
+}
+.flex-align-content-around {
+  align-content: space-around;
+}
+.flex-align-content-stretch {
+  align-content: stretch;
+}
+
+// @for $i from 1 through 12 {
+//   .flex-#{$i} {
+//     flex: 0 0 #{$i}0%;
+//   }
+// }
+@for $i from 1 through 12 {
+  .flex-#{$i}-auto {
+    flex: 0 0 auto;
+  }
+}
+@for $i from 1 through 12 {
+  .flex-#{$i}-none {
+    flex: 0 0 none;
+  }
+}
+
+@for $i from 1 through 16 {
+  .flex-grow-#{$i} {
+    flex-grow: $i;
+  }
+}
+@for $i from 1 through 16 {
+  .flex-shrink-#{$i} {
+    flex-shrink: $i;
+  }
+}
