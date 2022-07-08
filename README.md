@@ -2,7 +2,7 @@
 
 basic scss component collection
 
-**every one** is hackable: size, color, background, functions; and so easy to use 😀
+**Each one** is customizable : size, color, background, functions; and so easy to use 😀
 
 Let's have a look
 
