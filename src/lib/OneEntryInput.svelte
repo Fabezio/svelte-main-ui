@@ -35,45 +35,45 @@
 </div>
 
 <style lang="scss" >
-  div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    margin: 1rem 0;
-  }
-  label {
-    display: none;
-    // display: block;
-    margin-right: 0.5rem;
-  }
-input {
-  appearance: none;
-  border: 2px solid black;
-  padding: 1em;
-  border-radius: 0.5em;
+//   div {
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     justify-content: flex-start;
+//     margin: 1rem 0;
+//   }
+//   label {
+//     display: none;
+//     // display: block;
+//     margin-right: 0.5rem;
+//   }
+// input {
+//   appearance: none;
+//   border: 2px solid black;
+//   padding: 1em;
+//   border-radius: 0.5em;
 
-  &:focus {
-    // outline: none;
-    border-color: #0070f3;
-  }
-}
+//   &:focus {
+//     // outline: none;
+//     border-color: #0070f3;
+//   }
+// }
 
-.valid {
-  border-color: #00f073;
-}
-.invalid {
-  border-color: #ff0000;
-}
-@media screen and (min-width: 768px) {
+// .valid {
+//   border-color: #00f073;
+// }
+// .invalid {
+//   border-color: #ff0000;
+// }
+// @media screen and (min-width: 768px) {
   
-  label {
-    display: block;
-  }
-  input::placeholder {
-    // content: none;
-    color: transparent;
-    // margin-bottom: 0.5rem;
-  }
-}
+//   label {
+//     display: block;
+//   }
+//   input::placeholder {
+//     // content: none;
+//     color: transparent;
+//     // margin-bottom: 0.5rem;
+//   }
+// }
 </style>

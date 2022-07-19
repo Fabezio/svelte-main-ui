@@ -21,7 +21,7 @@
 </button>
 
 <style>
-  button {
+  /* button {
     padding: 12px 1em;
     border-radius: 8px;
     border: none;
@@ -30,5 +30,5 @@
     font-weight: 200;
     text-transform: uppercase;
     margin: 4px;
-  }
+  } */
 </style>

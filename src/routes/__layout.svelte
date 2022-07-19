@@ -1,6 +1,6 @@
 <script>
   import {website} from "$lib/store/webIdent.js";
-  import Styles from "$lib/styles/Styles.svelte";
+  import Styles from "$lib/Styles.svelte";
   // import "$lib/main.scss"
   $website = "Svelte Main UI"
   import {page} from "$app/stores"

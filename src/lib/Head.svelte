@@ -15,11 +15,11 @@
 </h1>
 
 <style>
-  h1 {
+  /* h1 {
     text-align: center;
     text-transform: uppercase;
     font-size: 3em;
-  }
+  } */
 
 
 </style>
